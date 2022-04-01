@@ -18,7 +18,7 @@ const userStatus = {
     mainFunction(1000);
   };
   
-  var socket = io("ws://socket-io-audio-example.herokuapp.com:3000");
+  var socket = io(process.env.PORT || "3000");
   socket.emit("userInformation", userStatus);
   
   

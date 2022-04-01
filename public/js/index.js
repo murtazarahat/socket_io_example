@@ -17,8 +17,8 @@ window.onload = (e) => {
   mainFunction(1000);
 };
 
-let host = "";
-if (window.location.host === "localhost") {
+let host = "ws://localhost:3000";
+if (window.location.hostname === "localhost") {
   host = "ws://localhost:3000";
 } else {
   host = window.location.hostname;
